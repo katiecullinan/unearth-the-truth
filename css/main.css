@@ -343,6 +343,13 @@ video {
 	padding: 20px;
 	}
 
+.close-link {
+	color:#31BB28;
+	}
+
+.news-info, .news-info2 {display:none;
+	font-size: 14px;
+	padding: 20px;}
 
 .mobile-view {display: none;}
 .mobile-nav {display: none;}

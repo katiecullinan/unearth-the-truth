@@ -34,7 +34,26 @@
 		
 		<div class="news-box">
 			<ul>
-			<li>Aliens on Alpha Centari</li>
+			<li class="news-link">Is Alpha Centari The Best Place To Look For Aliens?</li>
+			<div class="news-info">
+			<img src="img/alphac.jpg" alt="Alpha Centari">
+			
+			<p> Russian billionaire Yuri Milner and the Breakthrough Foundation – an international organization committed to exploration and scientific research -  is determined to mount an interstellar mission to Alpha Centauri, our closest stellar neighbor, in the coming years. His latest initiative (named “Project Starshot“) aims to send a tiny spacecraft to the Alpha Centauri system to search for planets and signs of life. Consisting of an ultra-light nanocraft and a lightsail, the concept calls for a ground-based laser array to push the lightsail up to speeds of hundreds of kilometers an hour, towing the nanocraft into deep space. Such a system would allow the tiny spacecraft to conduct a flyby mission to Alpha Centauri in about 20 years after it is launched, which could then beam home images of possible planets, as well as other scientific data such as analysis of magnetic fields.</p>
+			
+			<p><a class="close-link" href="" >Close</a></p>
+			
+			</div>
+			
+		<li class="news-link2"> Planet X System aka Nibiru Is Here Now </li>
+		
+		<div class="news-info2">
+			
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/Payond1iDNk" frameborder="0" allowfullscreen></iframe>
+			
+			<p><a class="close-link" href="" >Close</a></p>
+			
+			</div>
+		
 			<li>5 Most Chilling & Scariest Pieces of Paranormal Evidence Ever Documented.</li>
 			<li>Giant Stone Sphere Found in Bosnia Is Sign of Ancient Advanced Civilization?</li>
 			<li>U.S. Government Admits Chemtrails/Secretly Spraying Toxins on American Citizens - The Most Comprehensive Chemtrail Article Ever!</li>
@@ -60,6 +79,29 @@
 		</nav>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        
+        <script>
+		$(".news-link").click(function(){
+  		$(".news-info").toggle(500);
+		}); 
+		</script>
+		
+		 <script>
+		$(".news-link2").click(function(){
+  		$(".news-info2").toggle(500);
+		}); 
+		</script>
+		
+		 <script>
+
+		$(".close-link").click(function(){
+  		$(".news-info").toggle(500);
+		}); 
+	
+		</script>
+
+
+
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
