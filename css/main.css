@@ -308,9 +308,17 @@ video {
 	padding-bottom: 30px;
 	}
 
+.progp img{
+	display: block;
+	width: 100px;
+	opacity: .5;
+	padding-bottom: 20px;
+	margin: 0 auto;
+	
+	}
 
 #clockdiv{
-	margin: 140px auto 0 auto;
+	margin: 100px auto 0 auto;
 	color: white;
 	width: 100%;
 	font-weight: 100;
