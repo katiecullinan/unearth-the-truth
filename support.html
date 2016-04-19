@@ -1,4 +1,6 @@
 <!doctype html>
+
+
 <html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
@@ -32,7 +34,41 @@
         <div class="progp"><img src="img/progp.png"></div>
 		<div class="subhead"><p> Sign up to get all our latest updates and exclusive information about our meetings and activities. </p></div>
 
+		
+		<div class="contact-us">	
+			
+		<div id="contact-area">
+			
+		
+<label for="Name">Name</label><br />
+<input type="text" name="Name" id="Name" /> <br />
+				
+<label for="City">City</label><br />
+<input type="text" name="City" id="City" /><br />
 
+<label for="Email">Email</label><br />
+<input type="text" name="Email" id="Email" /><br />
+				
+<a style="color: #00E3FF;" href="/contact" id="contact">Submit</a>
+
+<div class="messagepop pop">
+
+Thank you! <br>
+And remember, a lie is most convincingly hidden between two truths.
+
+</div>
+
+		
+			
+			
+			
+			
+		
+		</div>
+		
+		</div>
+	
+	
 		<nav class="big-nav"> 
 			<a href="index.html">Home</a> 
 			<a href="stories.html">Stories</a> 
@@ -45,6 +81,35 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        
+        <script>
+        function deselect(e) {
+  $('.pop').slideFadeToggle(function() {
+    e.removeClass('selected');
+  });    
+}
+
+$(function() {
+  $('#contact').on('click', function() {
+    if($(this).hasClass('selected')) {
+      deselect($(this));               
+    } else {
+      $(this).addClass('selected');
+      $('.pop').slideFadeToggle();
+    }
+    return false;
+  });
+
+  $('.close').on('click', function() {
+    deselect($('#contact'));
+    return false;
+  });
+});
+
+$.fn.slideFadeToggle = function(easing, callback) {
+  return this.animate({ opacity: 'toggle', height: 'toggle' }, 'fast', easing, callback);
+};
+</script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
