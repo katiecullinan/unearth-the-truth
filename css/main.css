@@ -365,6 +365,7 @@ label {
 	
 .cover-page {
     background-image: url("space-img.png");
+    background-size: cover;
     
 }	
 
