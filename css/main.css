@@ -237,12 +237,20 @@ video {
 .news-box {
 	width: 80%;
 	padding: 0;
-	margin: 50px auto 200px auto;
+	margin: 50px auto 40px auto;
 	display: block;
 	color: white;
 	text-align: center;
 	background-color: black;
 	border: 1px solid white;
+	}
+
+.comment-box {
+	margin: 0px auto 200px auto;
+	width: 70%;
+	background-color: white;
+	padding: 20px;
+	border: 1px solid gray;
 	}
 	
 .news-box ul {
